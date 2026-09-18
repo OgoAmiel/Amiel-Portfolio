@@ -3,7 +3,7 @@ function Hero() {
     <section id="home" className="hero">
       <div className="hero-container">
 
-        <p className="hero-eyebrow">Junior software developer / Pretoria, South Africa</p>
+        <p className="hero-eyebrow">Junior software engineer / Pretoria, South Africa</p>
 
         <h1>
           Ogorogile<br /><span>Amiel Madisa.</span>
@@ -14,7 +14,7 @@ function Hero() {
         </h2>
 
         <p className="hero-description">
-          Junior software developer with hands-on full-stack experience building responsive web applications with Vue.js, Python, Django REST Framework, and FastAPI. Skilled in REST API integration, relational databases, and collaborative agile development, with a focus on delivering reliable, user-centred solutions.
+          Junior software engineer with hands-on full-stack experience building responsive web applications with Vue.js, Python, Django REST Framework, and FastAPI. Skilled in REST API integration, relational databases, and collaborative agile development, with a focus on delivering reliable, user-centred solutions.
         </p>
 
         <div className="hero-buttons">
@@ -29,6 +29,14 @@ function Hero() {
             className="btn btn-secondary"
           >
             GitHub <span aria-hidden="true">&#8599;</span>
+          </a>
+
+          <a
+            href="/Ogorogile Amiel Madisa Junior Developer CV.pdf"
+            download
+            className="btn btn-secondary"
+          >
+            Download CV <span aria-hidden="true">&#8595;</span>
           </a>
         </div>
 

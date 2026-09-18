@@ -54,6 +54,11 @@ body { font-family: "DM Sans", sans-serif; }
   color: var(--blue);
 }
 
+.menu-toggle,
+.sr-only {
+  display: none;
+}
+
 .hero {
   min-height: 92vh;
   display: flex;
@@ -193,9 +198,37 @@ body { font-family: "DM Sans", sans-serif; }
 
 @media (max-width: 700px) {
   .navbar-container { padding: 1rem 1.25rem; }
-  .nav-links { gap: .85rem; overflow: hidden; }
-  .nav-links a { font-size: .7rem; white-space: nowrap; }
-  .nav-links a:nth-child(-n+2) { display: none; }
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--ink);
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .menu-toggle:hover { background: var(--yellow); }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 1.25rem;
+    left: 1.25rem;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: .5rem 0;
+    border: 1px solid var(--line);
+    background: rgba(243, 240, 232, .98);
+    box-shadow: 0 10px 24px rgba(23, 33, 51, .12);
+  }
+  .nav-links.is-open { display: flex; }
+  .nav-links a { padding: .8rem 1rem; font-size: .8rem; }
+  .nav-links a:hover { background: var(--yellow); }
   .hero { padding: 7rem 1.25rem 4rem; min-height: 85vh; background-image: none; }
   .section { padding: 4.5rem 1.25rem; }
   .about, .skills, .experience { grid-template-columns: 1fr; gap: 1.8rem; }

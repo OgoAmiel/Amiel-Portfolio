@@ -7,7 +7,7 @@ const projects = [
     name: "Leave Management System",
     description:
       "A full-stack employee leave portal for checking balances, requesting leave, tracking history, and cancelling applications.",
-    stack: ["Vue.js", "Django REST", "PostgreSQL"],
+    stack: ["Python", "Django REST", "PostgreSQL"],
     links: [
       ["Frontend", "https://github.com/OgoAmiel/Ogorogile-Frontend-Leave-System"],
       ["Backend", "https://github.com/OgoAmiel/Ogorogile-Backend-Leave-System"],
@@ -15,17 +15,25 @@ const projects = [
   },
   {
     number: "02",
+    name: "PDF Report Generator",
+    description:
+      "A report-generation project that creates structured PDF documents from application data, making information easier to share and review.",
+    stack: ["Python", "FastAPI", "SQLite"],
+    links: [["View repository", "https://github.com/OgoAmiel/PDF-report-generator"]],
+  },
+  {
+    number: "03",
     name: "Task Tracker",
     description:
       "A task-management application built around practical CRUD workflows, dynamic task data, and structured status tracking.",
-    stack: ["Vue.js", "Django REST", "REST APIs"],
+    stack: ["Python", "Django REST", "Vue.js"],
     links: [
       ["Frontend", "https://github.com/OgoAmiel/Ogorogile-Frontend-Task-Tracker"],
       ["Backend", "https://github.com/OgoAmiel/Ogorogile-Backend-Task-Tracker"],
     ],
   },
   {
-    number: "03",
+    number: "04",
     name: "1:27 Tuckshop",
     description:
       "A responsive e-commerce website designed around approachable ordering, clear interaction, and everyday usability.",
