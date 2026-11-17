@@ -164,6 +164,26 @@ body { font-family: "DM Sans", sans-serif; }
   background: var(--yellow);
 }
 
+.hero-description {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 2.5rem;
+}
+
+.about-copy p + p {
+  margin-top: 1.25rem;
+}
+
+.project-status {
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--yellow);
+  border: 1px solid #586377;
+  padding: 0.4rem 0.7rem;
+}
+
 .section { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem; border-top: 1px solid var(--line); }
 .section-label { font-family: "DM Mono", monospace; font-size: 0.72rem; color: var(--blue); text-transform: uppercase; }
 .about { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; }
